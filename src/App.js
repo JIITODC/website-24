@@ -3,6 +3,7 @@ import Home from './components/Home/Home';
 import Event from './components/Events/Event';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Resource from './components/Resources/Resource';
+import Join from './components/Join/join';
 
 function App() {
   return (
