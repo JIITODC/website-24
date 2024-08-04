@@ -1,0 +1,37 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 1em;
+}
+
+.header1{
+    display: flex;
+    gap: 1em;
+}
+.links1{
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+    cursor: pointer;
+}
+.links1:hover{
+    color: white;
+}
+
+.header2{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+}
+
+.links2{
+    color: rgb(216, 216, 216);
+}
+
+.links2:hover{
+    color: white;
+}
+
+.icons{
+    font-size: 22px;
+  }
