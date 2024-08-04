@@ -12,6 +12,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/events" element={<Event/>}/>
         <Route path="/resources" element={<Resource/>}/>
+        <Route path="/join" element={<Join />}/>
       </Routes>
     </BrowserRouter>
     </div>

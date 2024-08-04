@@ -20,7 +20,7 @@ function Header() {
        <a href="https://www.instagram.com/jodc128/"><FaInstagram className='icons links2'  /></a> 
        <a href="https://github.com/JIITODC/website-24"><FaGithub className='icons links2'  /></a> 
        <a href="https://discord.gg/xf8YDutB"><FaDiscord className='icons links2'  /></a> 
-        <h3 className='links2'>Join the society</h3>
+       <Link to='/join' className='links2'><h3 className='links2'>Join the society</h3></Link>
       </div>
     </div>
   );
