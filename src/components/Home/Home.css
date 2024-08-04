@@ -1,0 +1,71 @@
+.hero{
+    width: 100%;
+    height: 22em;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 22em;
+    width: 22em;
+}
+.hero>h1{
+    width: 7em;
+    height: 7em;
+    font-size: 3em;
+    color: rgb(222, 222, 222);
+    display: flex;
+    align-items: center;
+}
+
+.desc{
+    color: rgb(222, 222, 222);
+    display: flex;
+    justify-content: center;
+}
+.desc>h6{
+    width: 55em;
+    height: 4em;
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 1.3em;
+    font-weight: 500;
+}
+
+.slider-container{
+  padding: 2em 6em;
+  margin-bottom: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carouselImages{
+    height: 26em;
+    width: 80em;
+    object-fit: cover;
+    
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 20px;
+  font-size: 10em;
+}
+
+.slick-next {
+  right: 20px;
+}
