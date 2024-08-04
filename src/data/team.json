@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "name": "Arnav Bhargava",
+      "post": "Society Head"
+    },
+    {
+        "id": 2,
+        "name": "Prakhar Shankar",
+        "post": "Core Member"
+      },
+      {
+        "id": 3,
+        "name": "Pradyot Ranjan",
+        "post": "Core Member"
+      },
+      {
+        "id": 4,
+       "name": "Vidip Singh",
+        "post": "Core Member"
+      },
+      {
+        "id": 5,
+       "name": "Tushar Singhal",
+        "post": "Core Member"
+      },
+      {
+        "id": 6,
+       "name": "Nihar Sanoria",
+        "post": "Core Member"
+      },
+      {
+        "id": 7,
+        "name": "Sanidhya Nigam",
+        "post": "Core Member"
+      },
+      {
+        "id": 8,
+       "name": "Siddhant Roy",
+        "post": "Core Member"
+      }
+  ]
+  

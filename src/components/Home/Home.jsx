@@ -6,6 +6,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import image1 from '../../images/image1.jpg'
+import teamData from '../../data/team.json'
 
 function PrevArrow({ onClick }) {
   return (
@@ -89,7 +90,27 @@ const Home = () => {
         <img src={image1} alt="" className='carouselImages' />
         </div>
       </Slider>
-    </div>
+      </div>
+
+      <div className='team'>
+        <div className='title'>
+          <h1>Meet the OGs</h1>
+        </div>
+
+      <div className='cards'>
+        {teamData && teamData.map( data => {
+          return (
+            <div className='team1' id={data.id}>
+            <h1>{data.name}</h1>
+            <h5>{data.post}</h5>
+            </div>
+          )
+        })}
+      
+
+      </div>
+      
+      </div>
     </div>
   )
 }
