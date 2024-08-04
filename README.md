@@ -22,3 +22,12 @@ For React icons
 ### `npm install react-router-dom`
 
 For Routing
+
+### `npm install react-slick --save`
+### `npm install slick-carousel --save`
+
+For React slick
+
+### `npm install react-bootstrap bootstrap`
+
+For React bootstrap
