@@ -1,3 +1,16 @@
 .body{
     color: white;
 }
+
+.desc{
+    color: rgb(222, 222, 222);
+    display: flex;
+    justify-content: start;
+    padding-left: 4em;
+    background-color: #0F172A;
+    padding-top: 3em;
+}
+.desc>h1{
+    font-size: 3em;
+    font-weight: 700;
+}
