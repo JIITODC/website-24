@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react'
+import React from 'react'
 import './Home.css'
 import Header from '../Header/Header'
 import JODC_logo from  '../../images/jodcMascotWB.png'
