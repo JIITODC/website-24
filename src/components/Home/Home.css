@@ -29,6 +29,7 @@
     display: flex;
     justify-content: center;
     background-color: #0F172A;
+    padding: 0em 2.75em;
 }
 .desc>h6{
     width: 55em;
@@ -55,25 +56,36 @@
     
 }
 
-.slick-prev, .slick-next {
+.prev-arrow, .next-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 24px;
   cursor: pointer;
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2px;
 }
 
-.slick-prev {
-  left: 20px;
-  font-size: 10em;
+.prev-arrow {
+  left: -50px;
 }
 
-.slick-next {
-  right: 20px;
+.next-arrow {
+  right: -48px;
+}
+
+.prev-arrow>span{
+  background-color: #e2e8f0;
+}
+
+.next-arrow>span{
+  background-color: #e2e8f0;
 }
 
 .team{
@@ -117,4 +129,30 @@
 .team1>h5{
   color: #7c818d;
   font-size: 1em;
+}
+
+@media (min-width:320px) and (max-width:450px){
+  .hero{
+    width: 100%;
+    height: 22em;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F172A;
+}
+
+.logo{
+    height: 12em;
+    width: 12em;
+}
+.hero>h1{
+    width: 7em;
+    height: 7em;
+    font-size: 1.75em;
+}
+
+.desc>h6{
+  height: 20em;
+}
 }

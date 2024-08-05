@@ -3,6 +3,7 @@ import Header from '../Header/Header'
 import './Event.css';
 import Footer from '../Footer/Footer';
 
+
 const Event = () => {
   return (
     <div>
@@ -11,7 +12,7 @@ const Event = () => {
             <h1>Events</h1>
       </div>
 
-      
+
       {/* <Footer/> */}
     </div>
   )

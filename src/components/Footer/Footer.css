@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     padding: 0.25em 1em;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .copyright{
@@ -41,3 +44,12 @@
     backdrop-filter: blur(5px); 
     transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
   }
+
+@media (min-width:325px) and (max-width:450px) {
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70em;
+    }
+    
+}
