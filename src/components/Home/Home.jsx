@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import image1 from '../../images/image1.jpg'
 import teamData from '../../data/team.json'
+import Footer from '../Footer/Footer'
 
 function PrevArrow({ onClick }) {
   return (
@@ -111,6 +112,8 @@ const Home = () => {
       </div>
       
       </div>
+
+      <Footer/>
     </div>
   )
 }
