@@ -7,24 +7,23 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import image1 from '../../images/image1.jpg'
 import teamData from '../../data/team.json'
+import Footer from '../Footer/Footer'
 
-function PrevArrow({ onClick }) {
+const PrevArrow = ({ onClick }) => {
   return (
-    <button className="slick-prev" onClick={onClick}>
-      <i className="fas fa-chevron-left"></i>
+    <button className="prev-arrow" onClick={onClick}>
+      <span>&lt;</span>
     </button>
   );
-}
+};
 
-function NextArrow({ onClick }) {
+const NextArrow = ({ onClick }) => {
   return (
-    <button className="slick-next" onClick={onClick}>
-      <i className="fas fa-chevron-right"></i>
+    <button className="next-arrow" onClick={onClick}>
+      <span>&gt;</span>
     </button>
   );
-}
-
-
+};
 const Home = () => {
   var settings = {
     dots: false,
@@ -106,11 +105,11 @@ const Home = () => {
             </div>
           )
         })}
+      </div>
       
+      </div>
 
-      </div>
-      
-      </div>
+      <Footer/>
     </div>
   )
 }

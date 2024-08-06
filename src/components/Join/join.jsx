@@ -20,7 +20,7 @@ function Join(){
       event.preventDefault();
     }
 return(
-    <div>
+    <div className="form1">
         <Header />
         <form onSubmit={handleSubmit} className="Layout">
             <h1 className="heading">Join us!</h1>

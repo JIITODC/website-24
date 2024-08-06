@@ -13,12 +13,19 @@
 .Layout {
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
     padding: 20px;
-    max-width: 800px;
-    margin:60px auto;
+    max-width: 1000px;
+    /* margin:60px auto; */
     border: 1px solid #ddd;
     background-color: white;
+    margin-top: 4em;
+}
+
+.form1{
+    display: flex;
+    justify-content: center;
 }
 
 
