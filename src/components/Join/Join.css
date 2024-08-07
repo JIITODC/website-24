@@ -1,70 +1,77 @@
-
-.heading{
-    color: rgb(0, 0, 0);
-    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 0px;
-    max-width: 200px;
-    font-size: 3rem;
+.heading {
+  color: rgb(0, 0, 0);
+  background: -webkit-linear-gradient(
+    right,
+    #56d8e4,
+    #9f01ea,
+    #56d8e4,
+    #9f01ea
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0px;
+  max-width: 200px;
+  font-size: 3rem;
 }
-
 
 .Layout {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    padding: 20px;
-    max-width: 1000px;
-    /* margin:60px auto; */
-    border: 1px solid #ddd;
-    background-color: white;
-    margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 20px;
+  max-width: 1000px;
+  /* margin:60px auto; */
+  border: 1px solid #ddd;
+  background-color: white;
+  margin-top: 4em;
 }
 
-.form1{
-    display: flex;
-    justify-content: center;
+.form1 {
+  display: flex;
+  justify-content: center;
 }
-
 
 .form {
-    font-size: 1.5rem;
-    color: rgb(0, 0, 0);
-    margin-bottom: 30px;
-    font-family: Arial, sans-serif;
-    align-items: flex-start;
-    background-color: transparent;
-    width: 100%;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 30px;
+  font-family: Arial, sans-serif;
+  align-items: flex-start;
+  background-color: transparent;
+  width: 100%;
 }
 
-.submit{
-    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
-    transition: all 0.4s;
-    padding: 10px 30px;
-    border: none;
-    color: white;
+.submit {
+  background: -webkit-linear-gradient(
+    right,
+    #56d8e4,
+    #9f01ea,
+    #56d8e4,
+    #9f01ea
+  );
+  transition: all 0.4s;
+  padding: 10px 30px;
+  border: none;
+  color: white;
 }
 
 .submit:hover {
-    background: -webkit-linear-gradient(left, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
-    cursor: pointer;
+  background: -webkit-linear-gradient(left, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  cursor: pointer;
 }
 
 .input {
-    margin: 5px 0;
-    background-color: white;
-    border: none;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    padding: 5px 20px;
-    outline: none;
-  }
-  
+  margin: 5px 0;
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding: 5px 20px;
+  outline: none;
+}
 
 .input:focus {
-    border-bottom: 1px solid rgb(0, 0, 0);
-    box-shadow: none;
-    outline: none;
-  }
-
+  border-bottom: 1px solid rgb(0, 0, 0);
+  box-shadow: none;
+  outline: none;
+}
