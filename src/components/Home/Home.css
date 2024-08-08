@@ -4,7 +4,7 @@
 .hero{
     width: 100%;
     height: 22em;
-    padding-top: 5em;
+    padding-top: 8em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,20 +29,22 @@
     display: flex;
     justify-content: center;
     background-color: #0F172A;
-    padding: 0em 2.75em;
+    margin-top: 6em;
+    margin-bottom: 3.5em;
+    padding: 0;
 }
 .desc>h6{
-    width: 55em;
+    width: 60em;
     height: 4em;
     font-size: 1.4em;
     text-align: center;
     line-height: 1.3em;
     font-weight: 500;
+    margin-right: 2em;
 }
 
 .slider-container{
   padding: 2em 6em;
-  /* margin-bottom: 10em; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,15 +84,17 @@
 
 .prev-arrow>span{
   background-color: #e2e8f0;
+  margin-bottom: 0.25em;
 }
 
 .next-arrow>span{
   background-color: #e2e8f0;
+  margin-bottom: 0.25em;
 }
 
 .team{
   width: 100%;
-  height: 50em;
+  height: 40em;
   background-color: #1E293B;
 }
 
@@ -107,7 +111,7 @@
   background-color: #1E293B;
 }
 
-.cards{
+.cards1{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -118,9 +122,10 @@
 
 }
 .team1{
-  padding: 1em 3em;
+  padding: 2em 3em;
   text-align: center;
-  width: 14em;
+  width: 20em;
+  height: 8em;
 }
 .team1>h1{
   color: rgb(222, 222, 222);
@@ -154,5 +159,11 @@
 
 .desc>h6{
   height: 20em;
+}
+.team1{
+  padding: 1em 3em;
+  text-align: center;
+  width: 20em;
+  height: 8em;
 }
 }

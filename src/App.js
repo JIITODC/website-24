@@ -3,7 +3,7 @@ import Home from "./components/Home/Home";
 import Event from "./components/Events/Event";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Join from "./components/Join/join";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
   return (

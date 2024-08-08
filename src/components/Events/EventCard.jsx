@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import "./EventCard.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function MyCard(event) {
   return (
