@@ -107,7 +107,7 @@ const Home = () => {
           <h1>Meet the OGs</h1>
         </div>
 
-        <div className="cards">
+        <div className="cards1">
           {teamData &&
             teamData.map((data) => {
               return (

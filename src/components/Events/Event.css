@@ -1,3 +1,4 @@
+
 .body {
   color: white;
 }
@@ -8,7 +9,7 @@
   justify-content: start;
   padding-left: 4em;
   background-color: #0f172a;
-  padding-top: 3em;
+  /* padding-top: 3em; */
 }
 .desc > h1 {
   font-size: 3em;
@@ -32,6 +33,7 @@
   color: aliceblue;
   font-weight: bold;
   font-size: 3rem;
-  margin: 30px;
+  /* margin: 20px; */
   padding-bottom: 20px;
+  padding-top: 1.5em;
 }

@@ -9,6 +9,11 @@
 
 .copyright{
     color: rgb(216, 216, 216);
+    
+}
+.copyright>h4{
+    padding-top: 0.5em;
+    font-size: 1.25em;
 }
 
 .header2{
@@ -50,6 +55,10 @@
         display: flex;
         justify-content: space-between;
         margin-top: 70em;
+    }
+    .copyright>h4{
+        padding-top: 0.5em;
+        font-size: 0.825em;
     }
     
 }

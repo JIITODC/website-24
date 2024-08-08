@@ -8,10 +8,8 @@ import eventData from "../../data/events.json";
 function Event() {
   return (
     <div>
-      <Header />
-      <div className="desc">
-        <h1>Events</h1>
-      </div>
+      <Header className='header' />
+     
       <h2 className="ongoing">Ongoing Events</h2>
       <div className="event">
         {eventData &&
