@@ -8,7 +8,6 @@ function MyCard(event) {
     <Card
       style={{ width: "22rem" }}
       text="light"
-      border="light"
       bg="secondary"
       className="pad"
     >

@@ -1,4 +1,3 @@
-
 .body {
   color: white;
 }
@@ -24,6 +23,7 @@
   height: 50%;
   justify-content: space-evenly;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .ongoing {
@@ -33,7 +33,6 @@
   color: aliceblue;
   font-weight: bold;
   font-size: 3rem;
-  /* margin: 20px; */
   padding-bottom: 20px;
   padding-top: 1.5em;
 }

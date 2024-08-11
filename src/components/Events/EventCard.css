@@ -1,11 +1,19 @@
+.pad {
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 22rem;
+  height: 300px;
+}
+
+.pad:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(138, 63, 252, 0.6);
+}
+
 .body {
   background-color: #1a1e27;
 }
 
 .back {
   background-color: transparent;
-}
-
-.pad {
-  margin: 20px;
 }
