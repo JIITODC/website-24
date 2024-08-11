@@ -35,7 +35,7 @@ function Header() {
           <FaDiscord className="icons links2" />
         </a>
         <Link to="/join" className="links1">
-          <h3 className="links1">Join the society</h3>
+          <h3 className="joinS">Join the society</h3>
         </Link>
       </div>
     </div>
