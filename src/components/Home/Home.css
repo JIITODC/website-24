@@ -1,64 +1,76 @@
-*{
-  background-color: #0F172A;
+body {
+  background-image: linear-gradient(45deg, #000000, #150050, #3f0071, #ab1b52);
+  background-size: 400%;
+  animation: gradient 15s ease-in-out infinite;
 }
-.hero{
-    width: 100%;
-    height: 22em;
-    padding-top: 8em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0F172A;
-}
-
-.logo{
-    height: 22em;
-    width: 22em;
-}
-.hero>h1{
-    width: 7em;
-    height: 7em;
-    font-size: 3em;
-    color: rgb(222, 222, 222);
-    display: flex;
-    align-items: center;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.desc{
-    color: rgb(222, 222, 222);
-    display: flex;
-    justify-content: center;
-    background-color: #0F172A;
-    margin-top: 6em;
-    margin-bottom: 3.5em;
-    padding: 0;
-}
-.desc>h6{
-    width: 60em;
-    height: 4em;
-    font-size: 1.4em;
-    text-align: center;
-    line-height: 1.3em;
-    font-weight: 500;
-    margin-right: 2em;
+.hero {
+  width: 100%;
+  height: 22em;
+  padding-top: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slider-container{
+.logo {
+  height: 22em;
+  width: 22em;
+}
+.hero > h1 {
+  width: 7em;
+  height: 7em;
+  font-size: 3em;
+  color: rgb(222, 222, 222);
+  display: flex;
+  align-items: center;
+}
+
+.desc1 {
+  color: rgb(222, 222, 222);
+  display: flex;
+  justify-content: center;
+  margin-top: 6em;
+  margin-bottom: 3.5em;
+  padding: 20px;
+  background-color: none;
+}
+.desc1 > h6 {
+  width: 60em;
+  height: 4em;
+  font-size: 1.4em;
+  text-align: center;
+  line-height: 1.3em;
+  font-weight: 500;
+  margin-right: 2em;
+}
+
+.slider-container {
   padding: 2em 6em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #0F172A;
 }
 
-.carouselImages{
-    height: 26em;
-    width: 80em;
-    object-fit: cover;
-    
+.carouselImages {
+  height: 26em;
+  width: 80em;
+  object-fit: cover;
 }
 
-.prev-arrow, .next-arrow {
+.prev-arrow,
+.next-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -82,88 +94,103 @@
   right: -48px;
 }
 
-.prev-arrow>span{
+.prev-arrow > span {
   background-color: #e2e8f0;
   margin-bottom: 0.25em;
 }
 
-.next-arrow>span{
+.next-arrow > span {
   background-color: #e2e8f0;
   margin-bottom: 0.25em;
 }
 
-.team{
+.team {
   width: 100%;
   height: 40em;
-  background-color: #1E293B;
 }
 
-.title{
+.title {
   padding-top: 2em;
   width: 100%;
   height: 4em;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(222, 222, 222);
-  background-color: #1E293B;
-}
-.title>h1{
-  background-color: #1E293B;
 }
 
-.cards1{
+.cards1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2em;
-  background-color: #1E293B;
   margin-top: 4em;
   padding: 0em 4em;
-
 }
-.team1{
+
+.team1 {
   padding: 2em 3em;
   text-align: center;
   width: 20em;
   height: 8em;
+  background-color: #150050;
+  border-radius: 40px;
+  transition: all 0.3s ease;
 }
-.team1>h1{
+
+.team1:hover {
+  background-image: linear-gradient(to left, #000000, #150050, #3f0071);
+  animation: glowing 1.5s infinite alternate;
+  cursor: default;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px #3f0071, 0 0 20px #3f0071, 0 0 30px #6c1bdb,
+      0 0 40px #6c1bdb;
+  }
+  100% {
+    box-shadow: 0 0 20px #6c1bdb, 0 0 30px #8a3ffc, 0 0 40px #8a3ffc,
+      0 0 50px #8a3ffc;
+  }
+}
+
+.team1 > h1 {
   color: rgb(222, 222, 222);
   font-size: 1.8em;
 }
-.team1>h5{
+.team1 > h5 {
   color: #7c818d;
   font-size: 1em;
 }
 
-@media (min-width:320px) and (max-width:450px){
-  .hero{
+@media (min-width: 320px) and (max-width: 450px) {
+  .hero {
     width: 100%;
     height: 22em;
     padding-top: 5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0F172A;
-}
+  }
 
-.logo{
+  .logo {
     height: 12em;
     width: 12em;
-}
-.hero>h1{
+  }
+  .hero > h1 {
     width: 7em;
     height: 7em;
     font-size: 1.75em;
-}
+  }
 
-.desc>h6{
-  height: 20em;
-}
-.team1{
-  padding: 1em 3em;
-  text-align: center;
-  width: 20em;
-  height: 8em;
-}
+  .desc > h6 {
+    height: 20em;
+  }
+  .team1 {
+    padding: 1em 3em;
+    text-align: center;
+    width: 20em;
+    height: 8em;
+  }
 }

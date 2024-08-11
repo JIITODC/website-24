@@ -74,7 +74,7 @@ const Home = () => {
         </h1>
       </div>
 
-      <div className="desc">
+      <div className="desc1">
         <h6>
           Hello and welcome to the{" "}
           <span style={{ fontWeight: "bolder" }}>
@@ -104,7 +104,7 @@ const Home = () => {
 
       <div className="team">
         <div className="title">
-          <h1>Meet the OGs</h1>
+          <h1>Meet the OG's</h1>
         </div>
 
         <div className="cards1">

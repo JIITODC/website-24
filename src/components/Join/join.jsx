@@ -16,10 +16,7 @@ function Join() {
           marginheight="0"
           marginwidth="0"
           style={{
-            border: "2px solid #ccc",
-            borderRadius: "10px",
-            boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
-            backgroundColor: "#f0f0f0",
+            background: "transparent",
           }}
         >
           Loading…
