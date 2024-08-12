@@ -18,7 +18,7 @@ const Footer = () => {
        <a href="https://www.instagram.com/jodc128/"><FaInstagram className='icons links2'/></a> 
        <a href="https://github.com/JIITODC/website-24"><FaGithub className='icons links2'  /></a> 
        <a href="https://discord.gg/xf8YDutB"><FaDiscord className='icons links2'  /></a> 
-       <Link to='/join' className='links1'><h3 className='links1'>Join the society</h3></Link>
+       <Link to='/join' className='links1'><h3 className="links_footer">Join the society</h3></Link>
       </div>
     </div>
   );
