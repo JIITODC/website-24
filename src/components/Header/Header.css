@@ -104,6 +104,7 @@
   .header1 {
     display: flex;
     gap: 0.5em;
+    padding-top: 0.75em;
   }
   .links1 {
     font-size: 0.9em;
@@ -111,6 +112,12 @@
   .header {
     width: 100%;
     gap: 3em;
+  }
+  .joinS {
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 6em;
+    padding-top: 0.2em;
   }
   .header2 > a {
     background-color: transparent;
