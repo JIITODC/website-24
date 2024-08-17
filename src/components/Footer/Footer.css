@@ -58,17 +58,7 @@
     }
     .copyright>h4{
         padding-top: 0.5em;
-        font-size: 0.7em;
-    }
-    .icons{
-        font-size: 18px;
-        background-color: transparent;
-        backdrop-filter: blur(5px); 
-        transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
-      }    
-    .links_footer{
-        font-size: 4em;
-        width: 7.25em;
+        font-size: 0.825em;
     }
     
 }

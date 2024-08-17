@@ -193,16 +193,4 @@ body {
     width: 20em;
     height: 8em;
   }
-
-  .desc1 {
-    margin-top: 7em;
-    margin-bottom: 14em;
-    padding: 20px;
-  }
-  .desc1 > h6 {
-    line-height: 1.3em;
-    font-weight: 500;
-    margin-right: 0.5em;
-  }
-  
 }

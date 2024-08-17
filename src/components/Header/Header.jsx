@@ -34,7 +34,7 @@ function Header() {
         <a href="https://discord.gg/xf8YDutB">
           <FaDiscord className="icons links2" />
         </a>
-        <Link to="/join" className="links2">
+        <Link to="/join" className="links1">
           <h3 className="joinS">Join the society</h3>
         </Link>
       </div>
