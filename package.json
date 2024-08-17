@@ -16,6 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
     "formik": "^2.4.6",
+    "npm": "^10.8.2",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
@@ -24,6 +25,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
+    "start": "^5.1.0",
     "styled-components": "^6.1.12",
     "web-vitals": "^2.1.4"
   },
