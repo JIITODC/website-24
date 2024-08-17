@@ -1,0 +1,17 @@
+.popup{
+    padding-top: 50px;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.popup-text{
+    color: white;
+    font-size: 22x;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+
+}
