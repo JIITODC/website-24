@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import image1 from "../../images/image1.jpg";
 import teamData from "../../data/team.json";
 import Footer from "../Footer/Footer";
+import { Carouselhome } from "../Carousel";
 
 
 const PrevArrow = ({ onClick }) => {
@@ -89,19 +90,7 @@ const Home = () => {
         </h6>
       </div>
 
-      <div className="slider-container">
-        <Slider {...settings}>
-          <div>
-            <img src={JODC_logo} alt="" className="carouselImages" />
-          </div>
-          <div>
-            <img src={image1} alt="" className="carouselImages" />
-          </div>
-          <div>
-            <img src={image1} alt="" className="carouselImages" />
-          </div>
-        </Slider>
-      </div>
+    <Carouselhome />
 
       <div className="team">
         <div className="title">
