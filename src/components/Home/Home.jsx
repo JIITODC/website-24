@@ -9,6 +9,7 @@ import image1 from "../../images/image1.jpg";
 import teamData from "../../data/team.json";
 import Footer from "../Footer/Footer";
 import { Carouselhome } from "../Carousel";
+import { TeamCards } from "./TeamCards";
 
 
 const PrevArrow = ({ onClick }) => {
@@ -97,20 +98,9 @@ const Home = () => {
           <h1>Meet the OG's</h1>
         </div>
 
-        <div className="cards1">
-          {teamData &&
-            teamData.map((data) => {
-              return (
-                <div className="team1" id={data.id}>
-                  <h1>{data.name}</h1>
-                  <h5>{data.post}</h5>
-                </div>
-              );
-            })}
-        </div>
-      </div>
-
+      <TeamCards />
       <Footer />
+      </div>
     </div>
   );
 };
