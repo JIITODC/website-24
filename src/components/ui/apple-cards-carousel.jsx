@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState, createContext} from "react";
+import React, { useEffect, useState, createContext } from "react";
 import { IconArrowNarrowLeft, IconArrowNarrowRight } from "@tabler/icons-react";
 import { cn } from "../../lib/utils";
 import { motion } from "framer-motion";
@@ -11,8 +11,9 @@ export const CarouselContext = createContext({
 
 export const Carousel = ({ items, initialScroll = 0 }) => {
   const carouselRef = React.useRef(null);
-  const [canScrollLeft, setCanScrollLeft] = React.useState(false);
-  const [canScrollRight, setCanScrollRight] = React.useState(true);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+  const [scrollInterval, setScrollInterval] = useState(null);
   const [currentIndex] = useState(0);
 
   useEffect(() => {
@@ -42,9 +43,45 @@ export const Carousel = ({ items, initialScroll = 0 }) => {
     }
   };
 
+  const startScrollLeft = () => {
+    if (carouselRef.current) {
+      const interval = setInterval(() => {
+        carouselRef.current.scrollBy({ left: -10, behavior: "smooth" });
+      }, 16); // ~60fps
+      setScrollInterval(interval);
+    }
+  };
+
+  const startScrollRight = () => {
+    if (carouselRef.current) {
+      const interval = setInterval(() => {
+        carouselRef.current.scrollBy({ left: 10, behavior: "smooth" });
+      }, 16); // ~60fps
+      setScrollInterval(interval);
+    }
+  };
+
+  const stopScrolling = () => {
+    if (scrollInterval) {
+      clearInterval(scrollInterval);
+      setScrollInterval(null);
+    }
+  };
+
   return (
     <CarouselContext.Provider value={{ currentIndex }}>
       <div className="relative w-full">
+        <div
+          className="absolute left-0 top-10 h-4/5 w-[10%] z-50"
+          onMouseEnter={startScrollLeft}
+          onMouseLeave={stopScrolling}
+        />
+        <div
+          className="absolute right-0 top-10 h-4/5 w-[10%] z-50"
+          onMouseEnter={startScrollRight}
+          onMouseLeave={stopScrolling}
+        />
+        
         <div
           className="flex w-full overflow-x-scroll overscroll-x-auto py-4 scroll-smooth [scrollbar-width:none]"
           ref={carouselRef}
