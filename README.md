@@ -40,6 +40,13 @@ uninstall create-react-app
 
 install vite 
 
+
+### `npm install -D tailwindcss postcss autoprefixer`
+### `npx tailwindcss init -p`
+
+install tailwind css for vite
+
+
 ### you can run: `npm run start`
 
 
