@@ -175,4 +175,10 @@ const cards = [
     ctaText: "Github",
     ctaLink: "https://github.com/SOURHEAD",
   },
+    {
+    description: "Core Member",
+    title: "Swayam",
+    ctaText: "Github",
+    ctaLink: "https://github.com/SOURHEAD",
+  },
 ];
