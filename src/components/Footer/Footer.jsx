@@ -1,27 +1,60 @@
 import React from "react";
-import "./Footer.css";
-import { FaInstagram } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaDiscord } from "react-icons/fa";
-import {Link} from 'react-router-dom';
+import { FaInstagram, FaGithub, FaDiscord } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="footer">
-      <div className="copyright">
-        <h4>© {currentYear} JIIT Open-Source Developer Circle. All rights reserved.</h4>
-      </div>
+    <footer className="bg-black bg-opacity-80 text-white py-6 px-4">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div className="mb-4 md:mb-0 text-center md:text-left">
+          <h4 className="text-sm">
+            © {currentYear} JIIT Open-Source Developer Circle. All rights reserved.
+          </h4>
+        </div>
 
-      <div className='header2'>
-       <a href="https://www.instagram.com/jodc128/"><FaInstagram className='icons links2'/></a> 
-       <a href="https://github.com/JIITODC/website-24"><FaGithub className='icons links2'  /></a> 
-       <a href="https://discord.gg/xf8YDutB"><FaDiscord className='icons links2'  /></a> 
-       <Link to='/join' className='links1'><h3 className='links1'>Join the society</h3></Link>
+        <div className='flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6'>
+          <div className="flex space-x-4">
+            <a 
+              href="https://www.instagram.com/jodc128/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-white transition-colors duration-300"
+              aria-label="Instagram"
+            >
+              <FaInstagram className='text-2xl' />
+            </a>
+            <a 
+              href="https://github.com/JIITODC/website-24" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-white transition-colors duration-300"
+              aria-label="GitHub"
+            >
+              <FaGithub className='text-2xl' />
+            </a>
+            <a 
+              href="https://discord.gg/xf8YDutB" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-white transition-colors duration-300"
+              aria-label="Discord"
+            >
+              <FaDiscord className='text-2xl' />
+            </a>
+          </div>
+          <Link 
+            to='/join' 
+            className='bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200 transition-colors duration-300'
+          >
+            Join the society
+          </Link>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
 export default Footer;
+
